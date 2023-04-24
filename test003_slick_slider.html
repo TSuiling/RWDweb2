@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="./assist/slick-1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="./assist/slick-1.8.1/slick/slick-theme.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
+  <!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+  <script src="./assist/slick-1.8.1/slick/slick.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('.slider-top').slick({
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      });
+
+      $('.slider-prod').slick({
+        dots: true,
+        // infinite: false,
+        Infinity: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1000,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              // infinite: true,
+              // dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              dots: false
+            }
+          }
+        ]
+      });
+    });
+  </script>
+
+  <style>
+    body {
+      background-color: #4572a6;
+    }
+
+    .slider-top, .slider-prod {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .slider-top img {
+      max-width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="slider-top">
+    <div><img src="./img/slide1.jpg" alt=""></div>
+    <div><img src="./img/slide2.jpg" alt=""></div>
+    <div><img src="./img/slide3.jpg" alt=""></div>
+  </div>
+
+  <div style="margin-bottom: 100px;"></div>
+
+  <div class="slider-prod">
+    <div><img src="./img/sec3p1_1.jpg" alt=""></div>
+    <div><img src="./img/sec3p1_2.jpg" alt=""></div>
+    <div><img src="./img/sec3p1_3.jpg" alt=""></div>
+    <div><img src="./img/sec3p1_4.jpg" alt=""></div>
+    <div><img src="./img/sec3p2_1.jpg" alt=""></div>
+    <div><img src="./img/sec3p2_2.jpg" alt=""></div>
+    <div><img src="./img/sec3p2_3.jpg" alt=""></div>
+    <div><img src="./img/sec3p2_4.jpg" alt=""></div>
+  </div>
+
+</body>
+
+</html>

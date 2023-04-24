@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=3.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8">
+  <title>Timothy保養品</title>
+
+  <!-- 網頁頁籤標題左側顯示的圖示ICON -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <!-- 書籤收藏夾顯示的圖示ICON -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> -->
+
+  <link rel="stylesheet" href="layout.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbarSupportedContent" data-bs-offset="200">
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="moffcanvas" aria-labelledby="moffcanvasLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="moffcanvasLabel">Offcanvas</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+
+      <ul class="navbar-nav ms-auto text-center">
+        <li class="nav-item">
+          <a class="nav-link" href="#sec1" aria-current="page">最新消息</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#sec2">新品介紹</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#sec3">商品推薦</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#sec4">保養有道</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#sec5">聯絡我們</a>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+
+  <!-- navbar一組導覽列，lg 991px md 767px 以下會轉為手機版 -->
+  <!-- navbar-light 是配合亮底版面字為黑色，navbar-dark 是配合暗底版面字為白色 -->
+  <!-- bg-light 才是背景顏色,不需要刪除, fixed-top 固定畫面上方 -->
+  <header class="navbar navbar-expand-lg navbar-dark">
+
+    <div class="container-xl">
+      <!-- 以下是手機版才出現的按鈕，負責控制顯示原導覽下拉選單 -->
+      <!-- 注意：data-bs-target的名字必須與可收合部份的ID相同 -->
+      <button class="navbar-toggler show-nav-menu" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- 表現LOGO連結的區域，可以加上LOGO圖片 -->
+      <a class="navbar-brand" href="#">
+        <h1 class="d-flex align-items-center">
+          <img src="./img/logo.png" width="150" height="148" alt="">
+          蒂莫絲保養品
+        </h1>
+      </a>
+
+      <!-- 以下是手機版才出現的按鈕，負責控制顯示導覽選單 -->
+      <!-- 注意：data-bs-target的名字必須與可收合部份的ID相同 -->
+      <button class="navbar-toggler show-offcanvas-menu" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#moffcanvas" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <nav class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav ms-auto text-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#sec1" aria-current="page">最新消息</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#sec2">新品介紹</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#sec3">商品推薦</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#sec4">保養有道</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#sec5">聯絡我們</a>
+          </li>
+
+          <!-- 含有下拉式選單的按鈕項目START (不要就刪除) 
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" 
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+
+            先收合的第2層選單
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+
+          </li>
+          -->
+
+          <!-- 這是一個不能按的按鈕項目 (不要就刪除) 
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+          -->
+        </ul>
+
+        <!--  這是一個表單，可以是搜尋用的表單 (不要就刪除)
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        -->
+
+        <p class="d-lg-none text-white mx-3 my-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam soluta deleniti iusto. Dolorem est eaque
+          fugit eos quo animi nesciunt cum adipisci totam quod doloremque reiciendis, earum expedita voluptates vel?
+        </p>
+
+      </nav>
+    </div>
+
+  </header>
+
+
+  <!-- section#sec$*5>h2{標題ABC} -->
+
+  <section id="sec1">
+
+    <div id="topSlider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <!-- <img src="./img/slide1.jpg" class="d-block w-100" alt="..."> -->
+          <!-- <picture>
+            <source media="(min-width: 1000px)" srcset="./img/slide1.jpg">
+            <source media="(min-width: 500px)" srcset="../img/slide1m.jpg">
+            <img src="./img/slide1s.jpg" class="d-block w-100">
+          </picture> -->
+        </div>
+
+        <div class="carousel-item">
+          <!-- <img src="./img/slide2.jpg" class="d-block w-100" alt="..."> -->
+          <!-- <picture>
+            <source media="(min-width: 1000px)" srcset="./img/slide2.jpg">
+            <source media="(min-width: 500px)" srcset="../img/slide2m.jpg">
+            <img src="./img/slide2s.jpg" class="d-block w-100">
+          </picture> -->
+        </div>
+
+        <div class="carousel-item">
+          <!-- <img src="./img/slide2.jpg" class="d-block w-100" alt="..."> -->
+          <!-- <picture>
+            <source media="(min-width: 1000px)" srcset="./img/slide3.jpg">
+            <source media="(min-width: 500px)" srcset="../img/slide3m.jpg">
+            <img src="./img/slide3s.jpg" class="d-block w-100">
+          </picture> -->
+        </div>
+
+        <div class="carousel-item">
+          <!-- <img src="./img/slide3.jpg" class="d-block w-100" alt="..."> -->
+          <!-- <picture>
+            <source media="(min-width: 1000px)" srcset="./img/slide2.jpg">
+            <source media="(min-width: 500px)" srcset="../img/slide2m.jpg">
+            <img src="./img/slide2s.jpg" class="d-block w-100">
+          </picture> -->
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#topSlider" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#topSlider" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#topSlider" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#topSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#topSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#topSlider" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+    </div>
+
+  </section>
+
+
+  <section id="sec2">
+    <h2 class="wow animate__animated animate__heartBeat animate__delay-05s">New Product</h2>
+
+    <div class="container-xl">
+
+      <div class="row">
+
+        <div class="col-12 col-md-6 col-img">
+          <img src="./img/sec2img.jpg" class="d-block w-100 rounded" alt="">
+          <!-- <img src="./img/shadow2.png" class="d-block w-100" alt=""> -->
+        </div>
+
+        <div class="col-12 col-md-6 col-txt">
+          <h3 class="wow animate__animated animate__fadeInUp animate__delay-1s">美白系列修護精華液</h3>
+          <p class="wow animate__animated animate__fadeInUp animate__delay-15s">
+            美白是一輩子的事，唯有長期做好防曬與美白保養，才能維持皮膚中的黑色素穩定，達到美白效果。做好美白保養，讓您整個人不再黯淡無光！為什麼要做美白保養?變白跟美麗有什麼正相關嗎?女生追求臉部上的光澤，做好美白保養的優點跟好處，視覺上看起來美觀之外，也會讓細紋的陰影變的比較不明顯，整個人看起來有精神。
+          </p>
+          <p class="wow animate__animated animate__fadeInUp animate__delay-2s">
+            美白是一輩子的事，唯有長期做好防曬與美白保養，才能維持皮膚中的黑色素穩定，達到美白效果。做好美白保養，讓您整個人不再黯淡無光！為什麼要做美白保養?變白跟美麗有什麼正相關嗎?女生追求臉部上的光澤，做好美白保養的優點跟好處，視覺上看起來美觀之外，也會讓細紋的陰影變的比較不明顯，整個人看起來有精神。
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section id="sec3">
+    <h2 class="wow animate__animated animate__heartBeat animate__delay-05s">商品推薦</h2>
+
+    <ul class="nav nav-tabs justify-content-center" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="sec3-1-tab" data-bs-toggle="tab" data-bs-target="#sec3-1" type="button"
+          role="tab" aria-controls="sec3-1" aria-selected="true">天然<span>系列</span></button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="sec3-2-tab" data-bs-toggle="tab" data-bs-target="#sec3-2" type="button" role="tab"
+          aria-controls="sec3-2" aria-selected="false">保濕<span>系列</span></button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="sec3-3-tab" data-bs-toggle="tab" data-bs-target="#sec3-3" type="button" role="tab"
+          aria-controls="sec3-3" aria-selected="false">精華<span>系列</span></button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="sec3-4-tab" data-bs-toggle="tab" data-bs-target="#sec3-4" type="button" role="tab"
+          aria-controls="sec3-4" aria-selected="false">新系列</button>
+      </li>
+    </ul>
+
+    <div class="tab-content">
+      <!-- 第1系列 ========================= -->
+      <div class="tab-pane fade show active" id="sec3-1" role="tabpanel" aria-labelledby="sec3-1-tab">
+
+        <div class="container-xl">
+
+          <div class="row" data-classname="天然系列">
+            <div class="col-12 col-sm-6 col-md-3">
+              <img src="./img/sec3p1_1.jpg" class="d-block mw-100 rounded-3 mb-3" data-bs-toggle="modal"
+                data-bs-target="#prodModal" alt="" data-img="sec3p1_1b.jpg">
+              <p class="text-center prod-name">天然蘆薈洗顏乳</p>
+              <div class="desc d-none">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, commodi, eum nihil veniam et optio
+                  inventore, officia voluptatum voluptate illum pariatur. Dolores est qui minus et veritatis, tenetur
+                  autem quae?</p>
+
+                <p>Ratione harum nihil ea tempore, dolore molestias illo perferendis! Suscipit dolor iste unde
+                  laudantium natus odit nostrum alias, maxime quis consequatur, quae, quos magnam. Necessitatibus nulla
+                  consequuntur recusandae aut impedit.</p>
+
+                <p>Cumque distinctio magnam nostrum, laboriosam culpa qui ex necessitatibus voluptates alias odio
+                  accusamus minus! Sed nemo reiciendis corporis laborum aspernatur, veritatis quasi officiis! Animi,
+                  delectus dolor itaque soluta nam maxime!</p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <img src="./img/sec3p1_2.jpg" class="d-block mw-100 rounded-3 mb-3" data-bs-toggle="modal"
+                data-bs-target="#prodModal" alt="" data-img="sec3p1_2b.jpg">
+              <p class="text-center prod-name">天然蘆薈化妝水</p>
+              <div class="desc d-none">
+                <p>Ratione harum nihil ea tempore, dolore molestias illo perferendis! Suscipit dolor iste unde
+                  laudantium natus odit nostrum alias, maxime quis consequatur, quae, quos magnam. Necessitatibus nulla
+                  consequuntur recusandae aut impedit.</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, commodi, eum nihil veniam et optio
+                  inventore, officia voluptatum voluptate illum pariatur. Dolores est qui minus et veritatis, tenetur
+                  autem quae?</p>
+
+                <p>Cumque distinctio magnam nostrum, laboriosam culpa qui ex necessitatibus voluptates alias odio
+                  accusamus minus! Sed nemo reiciendis corporis laborum aspernatur, veritatis quasi officiis! Animi,
+                  delectus dolor itaque soluta nam maxime!</p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <img src="./img/sec3p1_3.jpg" class="d-block mw-100 rounded-3 mb-3" data-bs-toggle="modal"
+                data-bs-target="#prodModal" alt="" data-img="sec3p1_3b.jpg">
+              <p class="text-center prod-name">天然蘆薈精華乳</p>
+              <div class="desc d-none">
+                <p>Cumque distinctio magnam nostrum, laboriosam culpa qui ex necessitatibus voluptates alias odio
+                  accusamus minus! Sed nemo reiciendis corporis laborum aspernatur, veritatis quasi officiis! Animi,
+                  delectus dolor itaque soluta nam maxime!</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, commodi, eum nihil veniam et optio
+                  inventore, officia voluptatum voluptate illum pariatur. Dolores est qui minus et veritatis, tenetur
+                  autem quae?</p>
+
+                <p>Ratione harum nihil ea tempore, dolore molestias illo perferendis! Suscipit dolor iste unde
+                  laudantium natus odit nostrum alias, maxime quis consequatur, quae, quos magnam. Necessitatibus nulla
+                  consequuntur recusandae aut impedit.</p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <img src="./img/sec3p1_4.jpg" class="d-block mw-100 rounded-3 mb-3" data-bs-toggle="modal"
+                data-bs-target="#prodModal" alt="" data-img="sec3p1_4b.jpg">
+              <p class="text-center prod-name">天然蘆薈精華液</p>
+              <div class="desc d-none">
+                <p>Ratione ipsum dolor sit amet consectetur adipisicing elit. Aliquid, commodi, eum nihil veniam et
+                  optio inventore, officia voluptatum voluptate illum pariatur. Dolores est qui minus et veritatis,
+                  tenetur autem quae?</p>
+
+                <p>Cumque distinctio magnam nostrum, laboriosam culpa qui ex necessitatibus voluptates alias odio
+                  accusamus minus! Sed nemo reiciendis corporis laborum aspernatur, veritatis quasi officiis! Animi,
+                  delectus dolor itaque soluta nam maxime!</p>
+
+                <p>Cumque harum nihil ea tempore, dolore molestias illo perferendis! Suscipit dolor iste unde laudantium
+                  natus odit nostrum alias, maxime quis consequatur, quae, quos magnam. Necessitatibus nulla
+                  consequuntur recusandae aut impedit.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- 第2系列 ========================= -->
+      <div class="tab-pane fade" id="sec3-2" role="tabpanel" aria-labelledby="sec3-2-tab">
+
+        <div class="container-xl">
+
+          <div class="row" data-classname="保濕系列">
+            <div class="col-12 col-sm-6 col-md-3">
+              <img src="./img/sec3p2_1.jpg" class="d-block mw-100 rounded-3 mb-3" data-bs-toggle="modal"
+                data-bs-target="#prodModal" alt="" data-img="sec3p2_1b.jpg">
+              <p class="text-center prod-name">天然蘆薈洗顏乳</p>
+              <div class="desc d-none">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, commodi, eum nihil veniam et optio
+                  inventore, officia voluptatum voluptate illum pariatur. Dolores est qui minus et veritatis, tenetur
+                  autem quae?</p>
+
+                <p>Ratione harum nihil ea tempore, dolore molestias illo perferendis! Suscipit dolor iste unde
+                  laudantium natus odit nostrum alias, maxime quis consequatur, quae, quos magnam. Necessitatibus nulla
+                  consequuntur recusandae aut impedit.</p>
+
+                <p>Cumque distinctio magnam nostrum, laboriosam culpa qui ex necessitatibus voluptates alias odio
+                  accusamus minus! Sed nemo reiciendis corporis laborum aspernatur, veritatis quasi officiis! Animi,
+                  delectus dolor itaque soluta nam maxime!</p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <img src="./img/sec3p2_2.jpg" class="d-block mw-100 rounded-3 mb-3" data-bs-toggle="modal"
+                data-bs-target="#prodModal" alt="" data-img="sec3p2_2b.jpg">
+              <p class="text-center prod-name">天然蘆薈化妝水</p>
+              <div class="desc d-none">
+                <p>Ratione harum nihil ea tempore, dolore molestias illo perferendis! Suscipit dolor iste unde
+                  laudantium natus odit nostrum alias, maxime quis consequatur, quae, quos magnam. Necessitatibus nulla
+                  consequuntur recusandae aut impedit.</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, commodi, eum nihil veniam et optio
+                  inventore, officia voluptatum voluptate illum pariatur. Dolores est qui minus et veritatis, tenetur
+                  autem quae?</p>
+
+                <p>Cumque distinctio magnam nostrum, laboriosam culpa qui ex necessitatibus voluptates alias odio
+                  accusamus minus! Sed nemo reiciendis corporis laborum aspernatur, veritatis quasi officiis! Animi,
+                  delectus dolor itaque soluta nam maxime!</p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <img src="./img/sec3p2_3.jpg" class="d-block mw-100 rounded-3 mb-3" data-bs-toggle="modal"
+                data-bs-target="#prodModal" alt="" data-img="sec3p2_3b.jpg">
+              <p class="text-center prod-name">天然蘆薈精華乳</p>
+              <div class="desc d-none">
+                <p>Cumque distinctio magnam nostrum, laboriosam culpa qui ex necessitatibus voluptates alias odio
+                  accusamus minus! Sed nemo reiciendis corporis laborum aspernatur, veritatis quasi officiis! Animi,
+                  delectus dolor itaque soluta nam maxime!</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, commodi, eum nihil veniam et optio
+                  inventore, officia voluptatum voluptate illum pariatur. Dolores est qui minus et veritatis, tenetur
+                  autem quae?</p>
+
+                <p>Ratione harum nihil ea tempore, dolore molestias illo perferendis! Suscipit dolor iste unde
+                  laudantium natus odit nostrum alias, maxime quis consequatur, quae, quos magnam. Necessitatibus nulla
+                  consequuntur recusandae aut impedit.</p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <img src="./img/sec3p2_4.jpg" class="d-block mw-100 rounded-3 mb-3" data-bs-toggle="modal"
+                data-bs-target="#prodModal" alt="" data-img="sec3p2_4b.jpg">
+              <p class="text-center prod-name">天然蘆薈精華液</p>
+              <div class="desc d-none">
+                <p>Ratione ipsum dolor sit amet consectetur adipisicing elit. Aliquid, commodi, eum nihil veniam et
+                  optio inventore, officia voluptatum voluptate illum pariatur. Dolores est qui minus et veritatis,
+                  tenetur autem quae?</p>
+
+                <p>Cumque distinctio magnam nostrum, laboriosam culpa qui ex necessitatibus voluptates alias odio
+                  accusamus minus! Sed nemo reiciendis corporis laborum aspernatur, veritatis quasi officiis! Animi,
+                  delectus dolor itaque soluta nam maxime!</p>
+
+                <p>Cumque harum nihil ea tempore, dolore molestias illo perferendis! Suscipit dolor iste unde laudantium
+                  natus odit nostrum alias, maxime quis consequatur, quae, quos magnam. Necessitatibus nulla
+                  consequuntur recusandae aut impedit.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- 第3系列 ========================= -->
+      <div class="tab-pane fade" id="sec3-3" role="tabpanel" aria-labelledby="sec3-3-tab">
+
+        <div class="container-xl">
+
+          <div class="row" data-classname="精華系列">
+            <div class="col-12 col-sm-6 col-md-3">
+              <img src="./img/sec3p3_1.jpg" class="d-block mw-100 rounded-3 mb-3" data-bs-toggle="modal"
+                data-bs-target="#prodModal" alt="" data-img="sec3p3_1b.jpg">
+              <p class="text-center prod-name">天然蘆薈洗顏乳</p>
+              <div class="desc d-none">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, commodi, eum nihil veniam et optio
+                  inventore, officia voluptatum voluptate illum pariatur. Dolores est qui minus et veritatis, tenetur
+                  autem quae?</p>
+
+                <p>Ratione harum nihil ea tempore, dolore molestias illo perferendis! Suscipit dolor iste unde
+                  laudantium
+                  natus odit nostrum alias, maxime quis consequatur, quae, quos magnam. Necessitatibus nulla
+                  consequuntur
+                  recusandae aut impedit.</p>
+
+                <p>Cumque distinctio magnam nostrum, laboriosam culpa qui ex necessitatibus voluptates alias odio
+                  accusamus minus! Sed nemo reiciendis corporis laborum aspernatur, veritatis quasi officiis! Animi,
+                  delectus dolor itaque soluta nam maxime!</p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <img src="./img/sec3p3_2.jpg" class="d-block mw-100 rounded-3 mb-3" data-bs-toggle="modal"
+                data-bs-target="#prodModal" alt="" data-img="sec3p3_2b.jpg">
+              <p class="text-center prod-name">天然蘆薈化妝水</p>
+              <div class="desc d-none">
+                <p>Ratione harum nihil ea tempore, dolore molestias illo perferendis! Suscipit dolor iste unde
+                  laudantium
+                  natus odit nostrum alias, maxime quis consequatur, quae, quos magnam. Necessitatibus nulla
+                  consequuntur
+                  recusandae aut impedit.</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, commodi, eum nihil veniam et optio
+                  inventore, officia voluptatum voluptate illum pariatur. Dolores est qui minus et veritatis, tenetur
+                  autem quae?</p>
+
+                <p>Cumque distinctio magnam nostrum, laboriosam culpa qui ex necessitatibus voluptates alias odio
+                  accusamus minus! Sed nemo reiciendis corporis laborum aspernatur, veritatis quasi officiis! Animi,
+                  delectus dolor itaque soluta nam maxime!</p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <img src="./img/sec3p3_3.jpg" class="d-block mw-100 rounded-3 mb-3" data-bs-toggle="modal"
+                data-bs-target="#prodModal" alt="" data-img="sec3p3_3b.jpg">
+              <p class="text-center prod-name">天然蘆薈精華乳</p>
+              <div class="desc d-none">
+                <p>Cumque distinctio magnam nostrum, laboriosam culpa qui ex necessitatibus voluptates alias odio
+                  accusamus minus! Sed nemo reiciendis corporis laborum aspernatur, veritatis quasi officiis! Animi,
+                  delectus dolor itaque soluta nam maxime!</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, commodi, eum nihil veniam et optio
+                  inventore, officia voluptatum voluptate illum pariatur. Dolores est qui minus et veritatis, tenetur
+                  autem quae?</p>
+
+                <p>Ratione harum nihil ea tempore, dolore molestias illo perferendis! Suscipit dolor iste unde
+                  laudantium
+                  natus odit nostrum alias, maxime quis consequatur, quae, quos magnam. Necessitatibus nulla
+                  consequuntur
+                  recusandae aut impedit.</p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <img src="./img/sec3p3_4.jpg" class="d-block mw-100 rounded-3 mb-3" data-bs-toggle="modal"
+                data-bs-target="#prodModal" alt="" data-img="sec3p3_4b.jpg">
+              <p class="text-center prod-name">天然蘆薈精華液</p>
+              <div class="desc d-none">
+                <p>Ratione ipsum dolor sit amet consectetur adipisicing elit. Aliquid, commodi, eum nihil veniam et
+                  optio
+                  inventore, officia voluptatum voluptate illum pariatur. Dolores est qui minus et veritatis, tenetur
+                  autem quae?</p>
+
+                <p>Cumque distinctio magnam nostrum, laboriosam culpa qui ex necessitatibus voluptates alias odio
+                  accusamus minus! Sed nemo reiciendis corporis laborum aspernatur, veritatis quasi officiis! Animi,
+                  delectus dolor itaque soluta nam maxime!</p>
+
+                <p>Cumque harum nihil ea tempore, dolore molestias illo perferendis! Suscipit dolor iste unde laudantium
+                  natus odit nostrum alias, maxime quis consequatur, quae, quos magnam. Necessitatibus nulla
+                  consequuntur
+                  recusandae aut impedit.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- 第4系列 ========================= -->
+      <div class="tab-pane fade" id="sec3-4" role="tabpanel" aria-labelledby="sec3-4-tab">
+        <h3 class="text-center">2023年秋季新商品~~請期待~~</h3>
+      </div>
+    </div>
+
+  </section>
+
+
+  <section id="sec4">
+    <h2 class="wow animate__animated animate__heartBeat animate__delay-05s">保養有道</h2>
+
+    <div class="container-xl">
+      <div class="row">
+        <div class="col-12 col-md-8">
+          <h3 class="mb-3 mb-md-4">優良的保養方式才能養出水潤光滑的美麗肌膚</h3>
+
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <!-- item 1 -->
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Accordion Item #111111
+                </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                    the
+                    <code>.accordion-flush</code> class. This is the first item's accordion body.
+                  </div>
+                </div>
+            </div>
+            <!-- item 2 -->
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Accordion Item #222222
+                </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                    the
+                    <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this
+                    being filled with some actual content.
+                  </div>
+                </div>
+            </div>
+            <!-- item 3 -->
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Accordion Item #33333
+                </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                    the
+                    <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
+                    happening here in terms of content, but just filling up the space to make it look, at least at first
+                    glance, a bit more representative of how this would look in a real-world application.
+                  </div>
+                </div>
+            </div>
+            <!-- item 4 -->
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="flush-heading4">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
+                  Accordion Item #44444
+                </button>
+                </h2>
+                <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-heading4"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                    the
+                    <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
+                    happening here in terms of content, but just filling up the space to make it look, at least at first
+                    glance, a bit more representative of how this would look in a real-world application.
+                  </div>
+                </div>
+            </div>
+            <!-- item 5 -->
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="flush-heading5">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
+                  Accordion Item #55555
+                </button>
+                </h2>
+                <div id="flush-collapse5" class="accordion-collapse collapse" aria-labelledby="flush-heading5"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                    the
+                    <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
+                    happening here in terms of content, but just filling up the space to make it look, at least at first
+                    glance, a bit more representative of how this would look in a real-world application.
+                  </div>
+                </div>
+            </div>
+            <!-- item 6 -->
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="flush-heading6">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapse6" aria-expanded="false" aria-controls="flush-collapse6">
+                  Accordion Item #6666
+                </button>
+                </h2>
+                <div id="flush-collapse6" class="accordion-collapse collapse" aria-labelledby="flush-heading6"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                    the
+                    <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
+                    happening here in terms of content, but just filling up the space to make it look, at least at first
+                    glance, a bit more representative of how this would look in a real-world application.
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <p class="mt-5 icontest">
+            <i class="bi bi-alarm"></i>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path class="svgpath1"
+                d="M8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5z" />
+              <path class="svgpath2"
+                d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1h-3zm1.038 3.018a6.093 6.093 0 0 1 .924 0 6 6 0 1 1-.924 0zM0 3.5c0 .753.333 1.429.86 1.887A8.035 8.035 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5zM13.5 1c-.753 0-1.429.333-1.887.86a8.035 8.035 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1z" />
+            </svg>
+
+            <img src="./img/alarm.svg" alt="">
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <section id="sec5">
+    <h2 class="wow animate__animated animate__heartBeat animate__delay-05s">聯絡我們</h2>
+
+    <div class="container-xl">
+      <div class="row">
+        <div class="col-12 col-md-9 offset-md-3">
+
+          <form method="post" target="_blank"
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfzuIoDdBAZAgIpUI-u1-zW23yrd5Or8ny3wUcmtOgcF0iLoA/formResponse">
+            <p class="text-center"><span class="redword">*</span> 表示欄位必填</p>
+
+            <!-- 第 1 欄 -->
+            <div class="row">
+              <div class="col-12 col-md-4 col-lg-3">
+                <span><span class="redword">*</span> 姓名：</span>
+                <i class="bi bi-person-fill"></i>
+              </div>
+
+              <div class="col-12 col-md-8 col-lg-9">
+                <input type="text" class="form-control" required name="entry.1561428070" placeholder="請輸入您的真實姓名">
+              </div>
+            </div>
+
+            <!-- 第 2 欄 -->
+            <div class="row">
+              <div class="col-12 col-md-4 col-lg-3">
+                <span><span class="redword">*</span> 稱謂：</span>
+                <i class="bi bi-gender-ambiguous"></i>
+              </div>
+
+              <div class="col-12 col-md-8 col-lg-9">
+                <input class="form-check-input check-1" type="radio" id="sex1" required name="entry.2101981108"
+                  value="先生">
+                <label class="form-check-label" for="sex1">先生</label>
+
+                <input class="form-check-input" type="radio" id="sex2" required name="entry.2101981108" value="小姐">
+                <label class="form-check-label" for="sex2">小姐</label>
+              </div>
+            </div>
+
+            <!-- 第 3 欄 -->
+            <div class="row">
+              <div class="col-12 col-md-4 col-lg-3">
+                <span><span class="redword">*</span> 手機：</span>
+                <i class="bi bi-phone-vibrate"></i>
+              </div>
+
+              <div class="col-12 col-md-8 col-lg-9">
+                <input type="number" class="form-control" required name="entry.1660683692" placeholder="請輸入聯絡您的電話">
+              </div>
+            </div>
+
+            <!-- 第 4 欄 -->
+            <div class="row">
+              <div class="col-12 col-md-4 col-lg-3">
+                <span><span class="redword">*</span> 服務區域：</span>
+                <i class="bi bi-shop"></i>
+              </div>
+
+              <div class="col-12 col-md-8 col-lg-9">
+
+                <select class="form-select" aria-label="Default select" required name="entry.452897632">
+                  <option selected disabled value="">請選擇靠近的服務區域.....</option>
+                  <option value="台北">台北</option>
+                  <option value="台中">台中</option>
+                  <option value="台南">台南</option>
+                </select>
+
+              </div>
+            </div>
+
+            <!-- 第 5 欄 -->
+            <div class="row">
+              <div class="col-12 col-md-4 col-lg-3">
+                <span><span class="redword">*</span> 服務項目：</span>
+                <i class="bi bi-check2-square"></i>
+              </div>
+
+              <div class="col-12 col-md-8 col-lg-9">
+                <label><input class="form-check-input check-1" type="checkbox" name="entry.2133894922"
+                    value="回覆問題">回覆問題</label>
+                <label><input class="form-check-input" type="checkbox" name="entry.2133894922" value="寄發型錄">寄發型錄</label>
+                <label><input class="form-check-input" type="checkbox" name="entry.2133894922" value="寄發樣品">寄發樣品</label>
+                <label><input class="form-check-input" type="checkbox" name="entry.2133894922" value="預約面談">預約面談</label>
+              </div>
+            </div>
+
+            <!-- 第 6 欄 -->
+            <div class="row">
+              <div class="col-12 col-md-4 col-lg-3">
+                <span><span class="redword">*</span> 留言內容：</span>
+                <i class="bi bi-chat-dots"></i>
+              </div>
+
+              <div class="col-12 col-md-8 col-lg-9">
+                <textarea class="form-control" rows="5" required name="entry.1089436581"
+                  placeholder="請輸入您的問題....."></textarea>
+              </div>
+            </div>
+
+            <!-- 第 7 欄 -->
+            <div class="text-end pt-3">
+              <!--  
+              color<input type="color" name="" id="">
+              date<input type="date" class="form-control" name="" id="">
+              datetime<input type="datetime-local" class="form-control" name="" id="">
+              email<input type="email" class="form-control" name="" id="">
+              password<input type="password" class="form-control" name="" id="">
+              url<input type="url" class="form-control" name="" id="">
+              file<input type="file" class="form-control" name="" id="">
+              HIDDEN<input type="hidden" class="form-control" name="">
+              -->
+              <input type="submit" class="btn btn-secondary" value="送出表單">
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+
+    <footer>
+      Copyright © 2021 Timothy Care Web | 建議使用 Chrome 瀏覽器 | Maintain by TS
+    </footer>
+
+  </section>
+
+
+  <!-- Button trigger modal 
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#prodModal">
+  Launch demo modal
+</button>
+-->
+  <!-- Modal -->
+  <div class="modal fade" id="prodModal" tabindex="-1" aria-labelledby="prodModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="prodModalLabel">系列名稱</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <img src="./img/sec3p1_1b.jpg" class="d-block mw-100 rounded-3" alt="">
+            </div>
+            <div class="col-12 col-md-6">
+              <h3>商品名稱</h3>
+              <div class="desc">
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea odio pariatur laborum amet sunt minima
+                  aliquam eius quis illo eum aspernatur ex quas, optio dolores reprehenderit excepturi. Ipsam, molestiae
+                  sed?
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 
+產品圖片點選對應顯示詳細介紹
+方法一：準備12個Modal, 不同的ID名稱
+方法二：(1)將各產品介紹的內容安排在各產品的HTML標籤附近=>(2)運用JS取出=>(3)放入Modal
+方法三：將產品資訊獨立存檔(JSON)=>運用JS(AJAX)載入=>放入Modal
+方法四：將產品資訊存在資料庫(有後台管理資訊)=>運用後端程式(PHP)讀取資料=>放入Modal
+-->
+
+
+
+
+
+  <script src="./wow.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+  <script>
+    new WOW().init();
+    //==================================================================
+    //當視窗捲動時
+    //假如是桌機版
+    //假如整頁向上滑出的範圍超過.navbar的高度, 
+    //則加上.fixed的名稱
+
+    $(window).scroll(function () {
+      if ($('.navbar-toggler').is(':hidden')) {
+        if ($('html').scrollTop() > $('.navbar').innerHeight()) {
+          $('.navbar').addClass('fixed');
+        }
+        if ($('html').scrollTop() == 0) {
+          $('.navbar').removeClass('fixed');
+        }
+      }
+    });
+
+    //==================================================================
+    //手機版, 當點選.navbar下拉選單的項目後, 
+    //沒有Fn時, if只要網頁剛進入時執行一次, 
+    //有Fn時, 可以運用window的resize事件反覆執行這個Fn
+    function chk_nav_menu() {
+      if ($('.show-nav-menu').is(':visible')) {
+        $('.navbar-collapse .nav-link').click(function () {
+          $('.show-nav-menu').trigger('click');
+        });
+      }
+    }
+    //一開始是桌機版 => 縮小視窗 => 手機版 => 結果上述自動trigger並不存在 => ????
+    chk_nav_menu();
+
+    $(window).resize(function () {
+      chk_nav_menu();
+    });
+
+
+
+    //==================================================================
+    function chk_offcanvas_menu() {
+      if ($('.show-offcanvas-menu').is(':visible')) {
+        $('.offcanvas .navbar-nav .nav-link').click(function () {
+          //等.5s後再執行
+          setTimeout(function () {
+            $('.offcanvas .btn-close').trigger('click');
+          }, 500);
+        });
+      }
+    }
+    //上述????仍然存在
+    //整頁滑動的定位不對了?????
+    chk_offcanvas_menu();
+    $(window).resize(function () {
+      chk_offcanvas_menu();
+    });
+
+
+    //當滑鼠滑入#sec3的影像(.col-12更理想)時==========================
+    $('#sec3 .col-12').hover(
+      function () {
+        //滑入時, 目前滑入的套用.scale-b
+        $(this).addClass('scale-b');
+        //其餘的套用.scale-s
+        $(this).siblings().addClass('scale-s');
+      },
+      function () {
+        //滑出時, 所有的.scale-b及.scale-s移除
+        $('#sec3 .col-12').removeClass('scale-b').removeClass('scale-s');
+      }
+    );
+
+
+    //#sec3點選圖片展開Modal的詳細介紹==================
+    //運用JS取出相關資料=>放入Modal
+    $('#sec3 .col-12 img').click(function () {
+      //取出相關資料
+      //var className = $(this).parent().parent().attr('data-classname');
+      var className = $(this).parents('.row').attr('data-classname');
+      //console.log('className==='+className);
+
+      var prodName = $(this).parent().children('.prod-name').text();
+      //console.log('prodName==='+prodName);
+
+      var prodImg = $(this).attr('data-img');
+      //console.log('prodImg==='+prodImg);
+
+      var prodDesc = $(this).parent().children('.desc').html();
+      //console.log('prodDesc==='+prodDesc);
+
+      $('#prodModalLabel').text(className);
+      $('.modal-body h3').text(prodName);
+      $('.modal-body img').attr('src', './img/' + prodImg);
+      $('.modal-body .desc').html(prodDesc);
+
+    });
+
+  </script>
+
+</body>
+
+</html>
